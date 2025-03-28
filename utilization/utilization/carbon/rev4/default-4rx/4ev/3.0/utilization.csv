@@ -1,15 +1,15 @@
           Site Type        , Used,Fixed,Prohibited,Available,Util% 
- CLB LUTs                  ,42981,    0,         0,    87840,48.93 
-   LUT as Logic            ,37937,    0,         0,    87840,43.19 
-   LUT as Memory           , 5044,    0,         0,    57600, 8.76 
-     LUT as Distributed RAM, 2396,    0,          ,         ,      
-     LUT as Shift Register , 2648,    0,          ,         ,      
- CLB Registers             ,60669,    0,         0,   175680,34.53 
-   Register as Flip Flop   ,60669,    0,         0,   175680,34.53 
+ CLB LUTs                  ,45439,    0,         0,    87840,51.73 
+   LUT as Logic            ,39818,    0,         0,    87840,45.33 
+   LUT as Memory           , 5621,    0,         0,    57600, 9.76 
+     LUT as Distributed RAM, 2944,    0,          ,         ,      
+     LUT as Shift Register , 2677,    0,          ,         ,      
+ CLB Registers             ,65265,    0,         0,   175680,37.15 
+   Register as Flip Flop   ,65265,    0,         0,   175680,37.15 
    Register as Latch       ,    0,    0,         0,   175680, 0.00 
  CARRY8                    , 2396,    0,         0,    14640,16.37 
- F7 Muxes                  ,  180,    0,         0,    58560, 0.31 
- F8 Muxes                  ,    4,    0,         0,    29280, 0.01 
+ F7 Muxes                  ,  250,    0,         0,    58560, 0.43 
+ F8 Muxes                  ,   45,    0,         0,    29280, 0.15 
  F9 Muxes                  ,    0,    0,         0,    14640, 0.00 
  Total,Clock Enable,Synchronous,Asynchronous 
  0    ,           _,          -,           - 
@@ -19,32 +19,32 @@
  0    ,           _,      Reset,           - 
  0    ,         Yes,          -,           - 
  238  ,         Yes,          -,         Set 
- 8531 ,         Yes,          -,       Reset 
- 1421 ,         Yes,        Set,           - 
- 50479,         Yes,      Reset,           - 
+ 9116 ,         Yes,          -,       Reset 
+ 1473 ,         Yes,        Set,           - 
+ 54438,         Yes,      Reset,           - 
                   Site Type                , Used,Fixed,Prohibited,Available,Util% 
- CLB                                       , 8314,    0,         0,    14640,56.79 
-   CLBL                                    , 3903,    0,          ,         ,      
-   CLBM                                    , 4411,    0,          ,         ,      
- LUT as Logic                              ,37937,    0,         0,    87840,43.19 
-   using O5 output only                    , 1016,     ,          ,         ,      
-   using O6 output only                    ,28122,     ,          ,         ,      
-   using O5 and O6                         , 8799,     ,          ,         ,      
- LUT as Memory                             , 5044,    0,         0,    57600, 8.76 
-   LUT as Distributed RAM                  , 2396,    0,          ,         ,      
+ CLB                                       , 8448,    0,         0,    14640,57.70 
+   CLBL                                    , 3868,    0,          ,         ,      
+   CLBM                                    , 4580,    0,          ,         ,      
+ LUT as Logic                              ,39818,    0,         0,    87840,45.33 
+   using O5 output only                    , 1217,     ,          ,         ,      
+   using O6 output only                    ,29156,     ,          ,         ,      
+   using O5 and O6                         , 9445,     ,          ,         ,      
+ LUT as Memory                             , 5621,    0,         0,    57600, 9.76 
+   LUT as Distributed RAM                  , 2944,    0,          ,         ,      
      using O5 output only                  ,    0,     ,          ,         ,      
-     using O6 output only                  ,   24,     ,          ,         ,      
-     using O5 and O6                       , 2372,     ,          ,         ,      
-   LUT as Shift Register                   , 2648,    0,          ,         ,      
+     using O6 output only                  ,   36,     ,          ,         ,      
+     using O5 and O6                       , 2908,     ,          ,         ,      
+   LUT as Shift Register                   , 2677,    0,          ,         ,      
      using O5 output only                  ,    0,     ,          ,         ,      
-     using O6 output only                  , 2208,     ,          ,         ,      
-     using O5 and O6                       ,  440,     ,          ,         ,      
- CLB Registers                             ,60669,    0,         0,   175680,34.53 
-   Register driven from within the CLB     ,36475,     ,          ,         ,      
-   Register driven from outside the CLB    ,24194,     ,          ,         ,      
-     LUT in front of the register is unused,17513,     ,          ,         ,      
-     LUT in front of the register is used  , 6681,     ,          ,         ,      
- Unique Control Sets                       , 2534,     ,         0,    29280, 8.65 
+     using O6 output only                  , 2233,     ,          ,         ,      
+     using O5 and O6                       ,  444,     ,          ,         ,      
+ CLB Registers                             ,65265,    0,         0,   175680,37.15 
+   Register driven from within the CLB     ,39349,     ,          ,         ,      
+   Register driven from outside the CLB    ,25916,     ,          ,         ,      
+     LUT in front of the register is unused,17945,     ,          ,         ,      
+     LUT in front of the register is used  , 7971,     ,          ,         ,      
+ Unique Control Sets                       , 2507,     ,         0,    29280, 8.56 
      Site Type    ,Used,Fixed,Prohibited,Available,Util% 
  Block RAM Tile   ,  13,    0,         0,      128,10.16 
    RAMB36/FIFO*   ,  13,    0,         0,      128,10.16 
@@ -86,8 +86,8 @@
  BITSLICE_TX     ,   0,    0,         0,       32, 0.00 
  RIU_OR          ,   0,    0,         0,       16, 0.00 
        Site Type     ,Used,Fixed,Prohibited,Available,Util% 
- GLOBAL CLOCK BUFFERs,   7,    0,         0,      352, 1.99 
-   BUFGCE            ,   4,    0,         0,      112, 3.57 
+ GLOBAL CLOCK BUFFERs,   5,    0,         0,      352, 1.42 
+   BUFGCE            ,   2,    0,         0,      112, 1.79 
    BUFGCE_DIV        ,   0,    0,         0,       16, 0.00 
    BUFG_GT           ,   0,    0,         0,       96, 0.00 
    BUFG_PS           ,   3,    0,         0,       96, 3.13 
@@ -112,23 +112,24 @@
  MASTER_JTAG,   0,    0,         0,        1, 0.00 
  STARTUPE3  ,   0,    0,         0,        1, 0.00 
   Ref Name , Used,Functional Category 
- FDRE      ,50479,           Register 
- LUT3      ,12945,                CLB 
- LUT2      ,12814,                CLB 
- LUT6      , 9250,                CLB 
- FDCE      , 8531,           Register 
- LUT4      , 5532,                CLB 
- LUT5      , 5006,                CLB 
- RAMD32    , 4166,                CLB 
- SRL16E    , 2627,                CLB 
+ FDRE      ,54438,           Register 
+ LUT3      ,14119,                CLB 
+ LUT2      ,12831,                CLB 
+ LUT6      ,10035,                CLB 
+ FDCE      , 9116,           Register 
+ LUT4      , 5718,                CLB 
+ LUT5      , 5197,                CLB 
+ RAMD32    , 5112,                CLB 
+ SRL16E    , 2660,                CLB 
  CARRY8    , 2396,                CLB 
- FDSE      , 1421,           Register 
- LUT1      , 1189,                CLB 
- RAMS32    ,  602,                CLB 
+ FDSE      , 1473,           Register 
+ LUT1      , 1363,                CLB 
+ RAMS32    ,  740,                CLB 
  SRLC32E   ,  461,                CLB 
+ MUXF7     ,  250,                CLB 
  FDPE      ,  238,           Register 
- MUXF7     ,  180,                CLB 
  DSP48E2   ,   64,         Arithmetic 
+ MUXF8     ,   45,                CLB 
  IBUFCTRL  ,   41,             Others 
  INBUF     ,   25,                I/O 
  OSERDESE3 ,   20,                I/O 
@@ -139,10 +140,9 @@
  IDDRE1    ,   14,           Register 
  RAMB36E2  ,   13,           BLOCKRAM 
  OBUFT     ,    9,                I/O 
- MUXF8     ,    4,                CLB 
- BUFGCE    ,    4,              Clock 
  BUFG_PS   ,    3,              Clock 
  IDELAYCTRL,    2,                I/O 
+ BUFGCE    ,    2,              Clock 
  PS8       ,    1,           Advanced 
  Ref Name,Used 
              Ref Name           ,Used 
@@ -157,10 +157,7 @@
  system_concat_9361_1_0         ,   1 
  system_concat_9361_0_0         ,   1 
  system_bram_ctrl_0             ,   1 
- system_axi_hp3_interconnect_0  ,   1 
- system_axi_hp2_interconnect_0  ,   1 
- system_axi_hp1_interconnect_0  ,   1 
- system_axi_hp0_interconnect_0  ,   1 
+ system_axi_hpc0_interconnect_0 ,   1 
  system_axi_cpu_interconnect_0  ,   1 
  system_axi_ad9361_dac_dma_1_0  ,   1 
  system_axi_ad9361_dac_dma_0_0  ,   1 
